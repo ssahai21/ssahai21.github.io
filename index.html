@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Bridge and Bloom</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body class="bg-light">
+    <header class="site-header">
+        <nav class="mynav container-fluid">
+            <div class="container d-flex justify-content-between align-items-center flex-wrap">
+                <!-- Left links -->
+                <div class="nav-left d-flex">
+                    <a class="navbar-link mx-2" href="#mission" onclick="aboutClick()">Mission</a>
+                    <a class="navbar-link mx-2" href="#values">Values</a>
+                </div>
+
+                <!-- Center title -->
+                <div class="nav-center text-center mx-auto">
+                    <a id="main" class="navbar-brand" href="/#start" style="color: lightcoral">Bridge and Bloom</a>
+                </div>
+
+                <!-- Right links -->
+                <div class="nav-right d-flex">
+                    <a class="navbar-link mx-2" href="#yo">Yo</a>
+                    <a class="navbar-link mx-2" href="#verywell">Very Well</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="start" class="container-fluid">
+        <video loop autoplay muted id="coverVid">
+            <source src="../static/resources/Intro.mp4" />
+        </video>
+        <div id="vidOverlay">
+            <h1 id="title">Welcome to the place where every story builds a bridge.</h1>
+        </div>
+    </div>
+    <div id="content">
+        <div id="mission" class="container-fluid">
+            <div class="section container-fluid">
+                <h2 class="sectitle">Our Mission</h2>
+                <div class="mission-content-wrapper">
+                    <img id="flowerfield" src="../static/resources/flowers-field.jpg" alt="Flower Field" />
+                    <div class="mission-text-group">
+                        <p class="left-text">To help foster respect and understanding within the global community by empowering refugees to share their stories and passions.</p>
+                        <p class="left-text">To give a voice to refugees and lessen xenophobia within communities.</p>
+                        <p class="left-text">To create a sense of respect for the passions and experience that refugees bring to the community by empowering them to share their stories.</p>
+                        <p class="left-text">To help foster respect and understanding in the global community through the arts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="values" class="container-fluid">
+            <div class="section container-fluid" style="background-color: #8adb7f">
+                <h2 class="sectitle" style="color: #321a40">Core Values</h2>
+                <div class="mission-content-wrapper">
+                    <img id="flowerfield" src="../static/resources/flowers-field.jpg" alt="Flower Field" />
+                    <div class="mission-text-group">
+                        <p class="left-text" style="color: #180d1f">Respect for people's privacy and experiences. We always give our voices the option of anonymity and maintain an open mind during interviews.</p>
+                        <p class="left-text" style="color: #180d1f">Empathy for anyone and everyone. We keep this value in mind while working with all immigrants and hope to foster a similar sense of understanding within the communities that hear our stories.</p>
+                        <p class="left-text" style="color: #180d1f">Integrity in all our actions. While we do modify recordings to ensure our voices maintain privacy, we strive to provide the most accurate representation of every voice.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../static/script.js"></script>
+</body>
+</html>

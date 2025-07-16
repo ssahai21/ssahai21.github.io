@@ -1,0 +1,134 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#start {
+    background-color: white;
+    width: 100vw;
+    height: 800px;
+    overflow: hidden;
+    position: relative;
+}
+
+.mynav {
+    position: fixed;
+    background-color: mistyrose;
+    padding: 10px 30px;
+    width: 100%;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+#coverVid {
+    width: 100vw;
+    overflow: hidden;
+    margin-left: -12px;
+    filter: grayscale(50%);
+}
+
+#vidOverlay{
+    position: absolute;
+    width: 100%;
+    margin-top: -700px;
+    z-index: 9;
+}
+
+.section{
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.navbar-link{
+    color: black;
+}
+
+.navbar-brand{
+    color: black;
+    font-weight: bold;
+}
+
+#content{
+    pointer-events: none;
+}
+
+#mission {
+    background-color: #027301;
+    margin-top: -100px;
+    padding-top: 200px;
+}
+
+#values {
+    background-color: #54296e;
+    margin-top: -100px;
+    padding-top: 200px;
+}
+
+.section {
+    background-color: #ffc8ab; 
+    width: 102%; 
+    height: 600px;
+    margin-top: -90px;
+    margin-left: -12px;
+    position: relative;
+}
+
+#title {
+    font-size: 52px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #b8702c;
+    font-weight: bold;
+    margin-top: 200px;
+    position: absolute;
+    width: auto;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.sectitle {
+    margin-left: 100px;
+    padding-top: 50px;
+    font-size: 70px;
+    color: #094713;
+    font-weight: bold;
+}
+
+.mission-content-wrapper {
+    display: flex; /* Make this a flex container */
+    align-items: flex-start; /* Aligns items to the top of the cross axis */
+    padding-left: 100px; /* Align with the title's left margin */
+    gap: 50px; /* Space between the image and the text group */
+    padding-top: 30px;
+}
+
+#flowerfield {
+    width: 250px;
+    height: auto;
+    border-radius: 30px;
+}
+
+.mission-text-group {
+    display: flex;
+    flex-direction: column; /* Stack paragraphs vertically */
+    /* flex-grow: 1; /* Allow this group to take up available space */
+    /* If you need a max width, define it here */
+    width: calc(100% - 200px - 30px - 40px); /* 100% of parent - image width - gap - some right padding */
+    max-width: 600px; /* Optional: Control max width */
+    padding-top: 20px;
+}
+
+.left-text {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 10px; /* Space between paragraphs */
+    /* Remove position: absolute; */
+}
+
+    .left-text:last-child {
+        margin-bottom: 0;
+    }
